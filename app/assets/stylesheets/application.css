@@ -10,11 +10,13 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
 *= require_self
  */
  @import "materialize";
-
+ 
+ 
  nav ul a {
     transition: background-color .3s;
     font-size: 1.3rem;
@@ -23,4 +25,7 @@
     margin-top: 2px;
     padding-top: 5px;
     padding: 20px;
+}
+.container{
+    display: flex;
 }

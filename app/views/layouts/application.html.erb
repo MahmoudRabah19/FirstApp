@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstApp</title>
+    <title>Blogo</title>
     <%= stylesheet_link_tag 'https://fonts.googleapis.com/icon?family=Material+Icons' %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   
   <%= csrf_meta_tags %>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+  <%= favicon_link_tag asset_path('icon.png') %>
   </head>
   
   <body>
 <nav>
   <div class="nav-wrapper">
     <a href="home" class="brand-logo">Blogo</a>
-    <ul class="right hide-on-med-and-down">
+    <ul class="right" >
       <li><a href="/:locale/users">Users</a></li>
       <li><a href="/:locale/posts">Posts</a></li>
      </ul>
   </div>
 </nav>
         
-    <%= yield %>
   </body>
+  <%= yield %>
 </html>

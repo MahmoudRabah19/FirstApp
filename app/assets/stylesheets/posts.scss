@@ -1,7 +1,11 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
+.raw {
+  display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 200px;
+}
 .MyPostCard {
     display: flex;
     flex-wrap: wrap;
@@ -45,3 +49,6 @@
       color: black;
     }
   }
+#newPost {
+  margin: 50px;
+}
