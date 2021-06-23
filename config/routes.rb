@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root :to => "home#index" 
   scope "/:locale" do 
-  root :to => "home#index"  
+   
   resources :posts
   resources :users
   end
