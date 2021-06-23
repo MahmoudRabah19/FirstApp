@@ -221,7 +221,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  materialize-sass
+  materialize-sass (~> 1.0.0)
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)

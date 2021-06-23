@@ -13,7 +13,6 @@ module FirstApp
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
     config.i18n.available_locales = [:en, :de, :ar, :fr]
     config.i18n.default_locale = :en
-    config.assets.initialize_on_precompile = false
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
