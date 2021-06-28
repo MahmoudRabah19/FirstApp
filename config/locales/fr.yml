@@ -1,2 +1,4 @@
 fr:
-  hello: "Bonjour le monde"
+  layouts:
+    application:
+      hello: "Bonjour le monde"

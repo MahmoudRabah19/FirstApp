@@ -16,8 +16,8 @@
   <div class="nav-wrapper">
     <a href="home" class="brand-logo">Blogo</a>
     <ul class="right" >
-      <li><a href="/:locale/users">Users</a></li>
-      <li><a href="/:locale/posts">Posts</a></li>
+      <li><%= link_to translate('.users'), users_path %></li>
+      <li><%= link_to translate('.posts'), posts_path %></li>
      </ul>
   </div>
 </nav>

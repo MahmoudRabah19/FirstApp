@@ -1,2 +1,6 @@
 ar:
-  hello: "مرحبا بالعالم"
+  layouts:
+    application:
+      hello: "مرحبا بالعالم"
+      users: "المستخدمين"
+      posts: "المشاركات"

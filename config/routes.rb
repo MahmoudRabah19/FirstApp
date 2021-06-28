@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  root :to => "home#index" 
+  
+  get '/', to: redirect("/#{I18n.default_locale}")
+
   scope "/:locale" do 
-   
-  resources :posts
-  resources :users
+    root :to => "home#index"
+    resources :posts
+    resources :users
   end
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
