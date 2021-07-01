@@ -1,31 +1,28 @@
 
 <p id="notice"><%= notice %></p>
+
 <div class="row">
   <div class="col s6"> <h1>Posts</h1> </div>
   <div class="col s6"> <%= link_to 'New Post', new_post_path, class: 'waves-effect waves-light btn-large', id: 'newPost' %></div>
 </div>
 
 <div class="row">
-
-<%= @posts.each do |post| %>
-  
-<div class="col s12 m6 xl6">
-
-<div class="MyPostCard">
-  <div class="column">
-       <p id="title"> <%= post.title %> </p>
-       <p class="postlink"> <%= link_to 'Show', post %></p>
-       <p class="postlink"> <%= link_to 'Edit', edit_post_path(post) %></p>
-       <p class="postlink"> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
-       <p id="description"><%= post.description %></p>
-       <p id="content"><%= post.content %></p>
-  </div>
-  </div>
+  <%= @posts.each do |post| %>
+    <div class="col s12 m6 xl6">
+      <div class="MyPostCard">
+        <div class="column">
+          <p id="title"> <%= post.title %> </p>
+          <p class="postlink"> <%= link_to 'Show', post %></p>
+          <p class="postlink"> <%= link_to 'Edit', edit_post_path(post) %></p>
+          <p class="postlink"> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
+          <p id="description"><%= post.description %></p>
+          <p id="content"><%= post.content %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
 
-<% end %>
-
-</div>
 <br>
 
 

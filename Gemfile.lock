@@ -81,10 +81,18 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    database_cleaner (2.0.1)
+      database_cleaner-active_record (~> 2.0.0)
+    database_cleaner-active_record (2.0.1)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
+    database_cleaner-core (2.0.1)
     diff-lcs (1.4.4)
     docile (1.4.0)
     erubi (1.10.0)
     execjs (2.8.1)
+    factory_bot (6.2.0)
+      activesupport (>= 5.0.0)
     ffi (1.15.1)
     font-awesome-rails (4.7.0.7)
       railties (>= 3.2, < 7)
@@ -245,6 +253,8 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  database_cleaner
+  factory_bot
   font-awesome-rails
   i18n-debug
   jbuilder (~> 2.7)
